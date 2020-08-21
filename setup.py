@@ -1,5 +1,5 @@
 from setuptools import setup
-
+from xgboost import XGBClassifier
 
 setup(
       name='my_custom_sklearn_transforms',
