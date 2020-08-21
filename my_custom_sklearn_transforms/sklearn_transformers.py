@@ -14,7 +14,7 @@ class DropColumns(BaseEstimator, TransformerMixin):
         # Primeiro realizamos a cópia do dataframe 'X' de entrada
         data = X.copy()
         # Retornamos um novo dataframe sem as colunas indesejadas
-    return data.drop(labels=self.columns, axis='columns')
+        return data.drop(labels=self.columns, axis='columns')
 
 rm_columns.fit(X=df_data_1)
 df_data_2 = pd.DataFrame.from_records(
