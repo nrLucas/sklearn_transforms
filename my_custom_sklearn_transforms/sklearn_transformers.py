@@ -16,6 +16,7 @@ class DropColumns(BaseEstimator, TransformerMixin):
         # Retornamos um novo dataframe sem as colunas indesejadas
         return data.drop(labels=self.columns, axis='columns')
 
+    
 rm_columns.fit(X=df_data_1)
 df_data_2 = pd.DataFrame.from_records(
     data=rm_columns.transform(
